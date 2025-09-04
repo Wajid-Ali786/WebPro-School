@@ -90,9 +90,9 @@ header.header {
 }
 
 .header .webpro-nav-links ul.main-ul {
-  padding: 0 24.86px;
+  padding: 0 25px 0 20px;
   display: flex;
-  gap: 42.24px;
+  gap: 42.5px;
 }
 
 .header .webpro-nav-links ul.main-ul li {
@@ -635,7 +635,7 @@ header.header {
 
 /* .webpro-mentor-section */
 .webpro-mentor-section {
-  padding: 43px 0px 60px;
+  padding: 55px 0px 60px;
   background-color: #ffffff;
   overflow: hidden;
 }
@@ -663,7 +663,7 @@ header.header {
   font-weight: 500;
   font-size: 36px;
   line-height: 39px;
-  letter-spacing: -0.4px;
+  letter-spacing: -0.45px;
   text-align: center;
   color: #000000;
   margin-bottom: 22px;
