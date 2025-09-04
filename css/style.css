@@ -1816,16 +1816,6 @@ header.header {
   transform: scale(1.05);
 }
 
-.webpro-success-stories-section .webpro-success-card-video .play-pause {
-  position: absolute;
-  top: calc(50% - 30px);
-  left: calc(50% - 44px);
-  width: 84px;
-  height: 57px;
-  z-index: 10;
-  text-align: center;
-}
-
 .webpro-success-stories-section .webpro-success-card-video .loading-spinner {
   display: none;
   position: absolute;
@@ -1840,13 +1830,6 @@ header.header {
   box-shadow: 0 0 10px rgba(5, 104, 163, 0.6);
   animation: spin 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
   z-index: 1000;
-}
-
-.webpro-success-stories-section
-  .bottom-cards
-  .webpro-success-card-video
-  .loading-spinner {
-  top: 115px;
 }
 
 .webpro-success-stories-section
@@ -1875,7 +1858,23 @@ header.header {
   background: rgba(0, 0, 0, 0.4);
   z-index: 900;
 }
-
+.webpro-success-stories-section .webpro-success-card-video .play-pause {
+  position: absolute;
+  top: calc(50% - 30px);
+  left: calc(50% - 44px);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 84px;
+  height: 57px;
+  z-index: 10;
+  text-align: center;
+}
+.webpro-success-stories-section
+  .bottom-cards
+  .webpro-success-card-video
+  .play-pause {
+  top: 28%;
+}
 .webpro-success-stories-section .webpro-success-card-video .success-play,
 .webpro-success-stories-section .webpro-success-card-video .success-pause {
   display: none;
@@ -1900,9 +1899,8 @@ header.header {
 
 .webpro-success-stories-section .webpro-success-card-video .success-pause {
   background-color: rgba(33, 33, 33, 0.8);
-  border-radius: 15px;
-  width: 98px;
-  height: 68px;
+  width: 100%;
+  height: 100%;
   align-content: center;
   transition: 0.3s ease;
 }
@@ -1977,12 +1975,6 @@ header.header {
 .webpro-success-stories-section .bottom-cards .title {
   left: 15px;
   bottom: 17px;
-}
-.webpro-success-stories-section
-  .bottom-cards
-  .webpro-success-card-video
-  .play-pause {
-  top: 65px;
 }
 
 .webpro-success-stories-section
@@ -3401,9 +3393,9 @@ box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
   .webpro-about-section .content .left-side {
     width: 55%;
   }
-.webpro-about-section .webpro-about-counter {
-  width: 100%;
-}
+  .webpro-about-section .webpro-about-counter {
+    width: 100%;
+  }
   .webpro-about-section .content .right-side {
     width: 45%;
   }
@@ -3487,7 +3479,7 @@ box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
 
   .webpro-joinus-section {
     margin: 35px 0;
-    padding: 70px 0;
+    padding: 70px 15px;
   }
 
   .webpro-joinus-section .joinus-content .left-side .bottom .whatsapp {
@@ -3659,6 +3651,7 @@ box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
   .webpro-faq-section .accordion-button {
     padding: 20px 20px 0px;
     font-size: 22px;
+    line-height: 120%;
   }
 
   .webpro-faq-section .accordion-body {
@@ -3749,7 +3742,7 @@ box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
   }
 
   .webpro-joinus-section {
-    padding: 50px 0;
+    padding: 50px 15px;
   }
 
   .webpro-joinus-section .joinus-content .right-side {
@@ -3793,18 +3786,6 @@ box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
 
   .webpro-success-stories-section .webpro-success-card-video .title .h4 {
     font-size: 26px;
-  }
-
-  .webpro-success-stories-section
-    .webpro-success-card-video
-    .success-play.active
-    svg,
-  .webpro-success-stories-section
-    .webpro-success-card-video
-    .success-pause.active
-    svg {
-    width: 75px;
-    height: 50px;
   }
 
   .webpro-success-stories-section .webpro-success-card-video .title .h4 br {
@@ -3978,7 +3959,7 @@ box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
 
   .webpro-joinus-section {
     margin: 25px 0;
-    padding: 40px 0;
+    padding: 40px 15;
   }
 
   .webpro-joinus-section .joinus-content {
@@ -4066,7 +4047,10 @@ box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
   .webpro-success-stories-section {
     padding: 25px 0;
   }
-
+  .webpro-success-stories-section .webpro-success-card-video .title .h4 {
+    font-size: 20px;
+    margin-bottom: 2px;
+  }
   .webpro-latest-events-section {
     margin: 25px 0;
     padding: 40px 0 40px 0;
@@ -4367,6 +4351,7 @@ box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
     display: flex;
     flex-wrap: wrap;
     gap: 17px;
+    row-gap: 5px;
   }
 
   .webpro-footer-section .footer-top .middle-side .responsive .link {
@@ -4412,21 +4397,6 @@ box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
     display: none;
   }
 
-  .webpro-h6-tags-same {
-    font-size: 24px !important;
-    gap: 12px !important;
-    line-height: 100% !important;
-  }
-
-  .webpro-h6-tags-same span {
-    width: 30px !important;
-    height: 25px !important;
-  }
-
-  .webpro-h6-tags-same span img {
-    width: 100% !important;
-  }
-
   .mrjin-22 {
     margin-bottom: 12px !important;
   }
@@ -4460,13 +4430,17 @@ box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
     top: 30px;
   }
   .webpro-h6-tags-same {
-    font-size: 18px !important;
-    gap: 10px !important;
+    font-size: 14px !important;
+    gap: 8px !important;
   }
 
   .webpro-h6-tags-same span {
-    width: 25px !important;
-    height: 25px !important;
+    width: 16px !important;
+    height: 16px !important;
+  }
+
+  .webpro-h6-tags-same span {
+    width: 100%;
   }
 }
 
@@ -4562,6 +4536,7 @@ box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
 
   .webpro-courses-section .course-title-div .list-icon {
     gap: 10px;
+    row-gap: 0;
   }
 
   .webpro-courses-section .course-card .card-text {
@@ -4586,11 +4561,47 @@ box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
   .webpro-joinus-section .joinus-responsive {
     flex-direction: column;
   }
-
+  .webpro-success-stories-section
+    .webpro-success-card-video
+    .success-play.active
+    svg {
+    width: 100%;
+    height: 100%;
+  }
+  .webpro-success-stories-section
+    .webpro-success-card-video
+    .success-pause.active
+    i {
+    font-size: 30px;
+  }
+  .webpro-success-stories-section .webpro-success-card-video .loading-spinner {
+    width: 35px;
+    height: 35px;
+  }
+  .webpro-success-stories-section
+    .webpro-success-card-video
+    .loading-spinner::after {
+    top: calc(50% - 20px);
+    left: calc(50% - 20px);
+    width: 40px;
+    height: 40px;
+  }
   .webpro-success-stories-section .success-card .card-content .h3 {
     flex-direction: column;
     gap: 5px;
   }
+  .webpro-success-stories-section .webpro-success-card-video .title .h4 {
+    font-size: 16px !important;
+    margin-bottom: 0px !important;
+    letter-spacing: 0 !important;
+  }
+  .webpro-success-stories-section .webpro-success-card-video .title .h6 {
+    font-size: 12px !important;
+  }
+  .webpro-success-stories-section .webpro-success-card-video .title {
+    bottom: 10px;
+  }
+
   .webpro-growth-section .growth-tag .content .text {
     gap: 2px;
   }
@@ -4627,21 +4638,12 @@ box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
   }
   .webpro-courses-section .course-card .card-img .course-name {
     width: 160px;
+    top: 10px;
+    left: 10px;
   }
   .webpro-success-stories-section .webpro-success-card-video .play-pause {
     top: calc(50% - 25px) !important;
     left: calc(50% - 20px);
-    width: 55px;
-    height: 39px;
-  }
-  .webpro-success-stories-section
-    .webpro-success-card-video
-    .success-play.active
-    svg,
-  .webpro-success-stories-section
-    .webpro-success-card-video
-    .success-pause.active
-    svg {
     width: 55px;
     height: 39px;
   }
@@ -4693,16 +4695,6 @@ box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
     border-radius: 10px;
   }
 
-  .webpro-success-stories-section .success-play.active svg,
-  .webpro-success-stories-section .success-pause.active svg {
-    width: 60px;
-  }
-
-  .webpro-success-stories-section .webpro-success-card-video .play-pause {
-    width: 60px;
-    left: calc(50% - 30px);
-  }
-
   .webpro-joinus-section
     .joinus-content
     .left-side
@@ -4721,7 +4713,7 @@ box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
     .left-side
     .bottom
     .whatsapp:hover::before {
-    top: 8px;
+    top: 5px;
   }
 
   .webpro-latest-events-section .events-swiper .custom-arrow {
