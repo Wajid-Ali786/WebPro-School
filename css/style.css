@@ -715,12 +715,12 @@ header.header {
 }
 
 .webpro-mentor-section .slide-card .mentor-content {
-  padding-top: 23px;
+  padding-top: 17px;
   padding-left: 18px;
 }
 
 .webpro-mentor-section .slide-card .mentor-content h4 {
-  margin-bottom: 0px;
+  margin-bottom: 4px;
 }
 
 .webpro-mentor-section .slide-card .mentor-content h4 a {
@@ -931,7 +931,7 @@ header.header {
 }
 
 .webpro-courses-section {
-  padding: 72px 0 60px;
+  padding: 63px 0 60px;
   background-color: #fff;
   overflow: hidden;
   padding-left: 15px !important;
@@ -948,7 +948,7 @@ header.header {
   align-items: center;
   gap: 16px;
   justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 
 .webpro-courses-section h2 {
@@ -1175,15 +1175,13 @@ header.header {
 
 /* .webpro-joinus-section  */
 .webpro-joinus-section {
-  margin: 58px 0 60px;
+  margin: 74px 0 60px;
   background-image: url(../assets/images/webpro-joinus-bg.png);
   position: relative;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 121px 0 121px;
-  padding-left: 15px !important;
-  padding-right: 15px !important;
+  padding: 152px 15px 153px;
 }
 
 .webpro-joinus-section::after {
@@ -1303,7 +1301,7 @@ header.header {
   transition: 0.4s ease;
   position: relative;
   border: 1px solid #fff0;
-  margin-bottom: -4px;
+  margin-bottom: 0px;
 }
 
 .webpro-joinus-section .joinus-content .left-side .bottom .whatsapp::before {
@@ -1364,11 +1362,11 @@ header.header {
   font-weight: 500;
   font-size: 36px;
   line-height: 39px;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.4px;
   text-transform: capitalize;
   color: #ffffff;
   margin-bottom: 21px;
-  padding-top: 33px;
+  padding-top: 4px;
 }
 
 .webpro-joinus-section .joinus-content .right-side p {
@@ -1533,7 +1531,7 @@ header.header {
   margin-top: -2px;
   border-radius: 56px;
   border: 1px solid var(--brand-color);
-  height: 56.58px;
+  height: 55px;
   width: 100%;
   font-size: 14px;
   line-height: 100%;
@@ -1570,7 +1568,7 @@ header.header {
 }
 
 .webpro-growth-section {
-  padding: 64px 0 60px;
+  padding: 60px 0 60px;
   background-color: #fff;
   padding-left: 15px !important;
   padding-right: 15px !important;
@@ -2042,7 +2040,7 @@ header.header {
   background-repeat: no-repeat;
   background-attachment: fixed;
   position: relative;
-  padding: 110px 0 111px 0;
+  padding: 126px 0 111px 0;
   overflow: hidden;
 }
 
@@ -2078,8 +2076,8 @@ header.header {
   color: #fff;
   display: flex;
   align-items: center;
-  gap: 15px;
-  padding-top: 2px;
+  gap: 16px;
+  padding-top: 6px;
   margin-bottom: 20px;
 }
 
@@ -2088,7 +2086,7 @@ header.header {
   font-weight: 500;
   font-size: 36px;
   line-height: 39px;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.4px;
   color: #fff;
   padding-top: 2px;
   margin-bottom: 22px;
@@ -2113,7 +2111,7 @@ header.header {
 }
 
 .webpro-latest-events-section .events-swiper .custom-arrow {
-  top: 209px;
+  top: 24.5%;
   border: 1.32px solid #ebebeb;
   background-color: #fff;
   border-radius: 50%;
@@ -2133,12 +2131,12 @@ header.header {
 }
 
 .webpro-latest-events-section .events-swiper .event-button-prev {
-  right: 294px;
+  right: 301px;
   left: auto;
 }
 
 .webpro-latest-events-section .events-swiper .event-button-next {
-  right: 234px;
+  right: 240px;
 }
 
 .webpro-latest-events-section
@@ -2178,7 +2176,7 @@ header.header {
   border-radius: 8px;
   overflow: hidden;
   position: relative;
-  margin-bottom: 17px;
+  margin-bottom: 16px;
 }
 
 .webpro-latest-events-section .events-card .img a {
@@ -2220,7 +2218,7 @@ header.header {
 }
 
 .webpro-latest-events-section .events-card .card-content {
-  padding: 0 1px;
+  padding: 0 0px 0 4px;
   display: flex;
   flex-direction: column;
   gap: 18px;
@@ -2265,7 +2263,7 @@ header.header {
   font-size: 14px;
   line-height: 23px;
   letter-spacing: 0px;
-  padding-top: 2px;
+  padding-top: 3px;
   color: #565656;
   padding-right: 50px;
 }
@@ -2475,7 +2473,7 @@ header.header {
   font-weight: 500;
   font-size: 36px;
   line-height: 39px;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.64px;
   color: #000000;
   margin-bottom: 55px;
   padding-right: 48px;
@@ -2704,8 +2702,8 @@ header.header {
 }
 
 .webpro-footer-section {
-  margin-top: 62px;
-  padding-top: 25px;
+  margin-top: 60px;
+  padding-top: 27px;
   background-color: var(--brand-color);
 }
 

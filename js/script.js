@@ -44,7 +44,7 @@ video.addEventListener("click", () => {
 $(document).ready(function () {
   /* Mentor Slider */
   const mentorSwiper = new Swiper(".mentor-swiper", {
-    spaceBetween: 26,
+    spaceBetween: 24,
     loop: false,
     autoplay: false,
     navigation: false, // set true if you want arrows
@@ -60,8 +60,8 @@ $(document).ready(function () {
         spaceBetween: 15,
       },
       1200: {
-        slidesPerView: 4.2,
-        spaceBetween: 26,
+        slidesPerView: 4,
+        spaceBetween: 24,
       }, // Apply on large desktops
     },
   });
@@ -75,7 +75,7 @@ $(document).ready(function () {
 
   /* Events Slider  */
   const eventsSwiper = new Swiper(".events-swiper", {
-    spaceBetween: 21,
+    spaceBetween: 19,
     loop: false,
     autoplay: false,
     navigation: {
@@ -97,9 +97,6 @@ $(document).ready(function () {
       },
       992: {
         slidesPerView: 2.5,
-      },
-      1200: {
-        slidesPerView: 3,
       },
       1400: {
         slidesPerView: 3, // Apply on large desktops
@@ -214,3 +211,36 @@ $(function () {
     setTimeout(() => $ripple.remove(), 600);
   });
 });
+
+
+/* activity Images slider */
+const sliders = document.querySelectorAll('.webpro-activity-section .activity-images .galry-row');
+
+sliders.forEach(slider => {
+  let isDown = false;
+  let startX;
+  let scrollLeft;
+
+  slider.addEventListener('mousedown', (e) => {
+    isDown = true;
+    startX = e.pageX - slider.offsetLeft;
+    scrollLeft = slider.scrollLeft;
+  });
+
+  slider.addEventListener('mouseleave', () => {
+    isDown = false;
+  });
+
+  slider.addEventListener('mouseup', () => {
+    isDown = false;
+  });
+
+  slider.addEventListener('mousemove', (e) => {
+    if(!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - slider.offsetLeft;
+    const walk = (x - startX) * 2; // drag speed multiplier
+    slider.scrollLeft = scrollLeft - walk;
+  });
+});
+
