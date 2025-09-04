@@ -2721,6 +2721,7 @@ header.header {
   .webpro-faq-section .accordion-button {
     padding: 20px 20px 0px;
     font-size: 22px;
+    line-height: 120%;
   }
 
   .webpro-faq-section .accordion-body {
@@ -3034,11 +3035,21 @@ header.header {
     padding: 30px 20px;
     width: calc((100% - 15px) / 2);
   }
-
+  .webpro-learn-skills-section .webpro-learn-skills-lastcard .tag {
+    width: 150px;
+            top: -80px;
+        right: -40px;
+  }
+.webpro-learn-skills-section .webpro-learn-skills-lastcard .title {
+  padding-left: 10%;
+}
   .webpro-learn-skills-section .webpro-learn-skills-card .icon {
     margin-bottom: 22px;
   }
-
+.webpro-comprehensive-tax-section .webpro-comprehensive-tax-card:hover {
+  transform: none;
+  scale: 1;
+}
   .webpro-comprehensive-tax-section .webpro-comprehensive-tax-card .icon-list {
     gap: 20px;
   }
@@ -3099,7 +3110,7 @@ header.header {
   }
 
   .webpro-results-speak-secton .title {
-    font-size: 448px;
+    font-size: 48px;
   }
 
   .header .webpro-logo img {
@@ -3141,6 +3152,7 @@ header.header {
 
   .banner-div .webpro-banner-left-side .btns-tag .btns-div {
     margin-bottom: 0;
+    align-items: center;
   }
 
   .banner-div .webpro-banner-left-side .bottom-content .btns-tag {
@@ -3354,6 +3366,7 @@ header.header {
     display: flex;
     flex-wrap: wrap;
     gap: 17px;
+    row-gap: 5px;
   }
 
   .webpro-footer-section .footer-top .middle-side .responsive .link {
@@ -3416,7 +3429,18 @@ header.header {
   .webpro-key-lessons-section .webpro-key-lessons-card {
     width: 100%;
   }
-
+  .webpro-success-stories-section .webpro-success-card-video .loading-spinner {
+    width: 35px;
+    height: 35px;
+  }
+  .webpro-success-stories-section
+    .webpro-success-card-video
+    .loading-spinner::after {
+    top: calc(50% - 20px);
+    left: calc(50% - 20px);
+    width: 40px;
+    height: 40px;
+  }
   .webpro-key-lessons-section .webpro-key-lessons-card .title {
     font-size: 30px;
     line-height: 32px;
