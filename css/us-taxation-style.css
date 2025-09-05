@@ -1122,6 +1122,11 @@ header.header {
   line-height: 100%;
   text-transform: capitalize;
   color: #000;
+  transition: all 0.3s ease;
+}
+.webpro-upwork-vs-fiverr-section .search-bar .search-feild:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 8px rgba(74, 144, 226, 0.6);
 }
 .search-feild.invalid {
   border-color: #b00020 !important;
@@ -1982,7 +1987,7 @@ header.header {
 .webpro-faq-section .accordion-body p {
   font-weight: 400;
   font-size: 18px;
-  line-height: 19px;
+  line-height: 130%;
   color: #565656;
   padding-right: 40px;
 }
@@ -2455,11 +2460,6 @@ header.header {
 }
 
 @media (max-width: 1800px) {
-  .webpro-key-lessons-section .webpro-key-lessons-card .title {
-    font-size: 26px;
-    letter-spacing: 0px;
-    line-height: 28px;
-  }
   .webpro-faq-section .accordion-button {
     position: relative;
   }
@@ -2493,7 +2493,7 @@ header.header {
 
   .webpro-p-tag-same {
     font-size: 17px !important;
-    line-height: 120% !important;
+    line-height: 130% !important;
   }
 
   .mrjin-22 {
@@ -2574,9 +2574,10 @@ header.header {
   }
 
   .webpro-key-lessons-section .webpro-key-lessons-card .title {
-    font-size: 24px;
+    font-size: 22px;
     line-height: 26px;
     padding: 20px;
+    font-weight: 600;
   }
 
   .webpro-upwork-vs-fiverr-section
@@ -2624,20 +2625,6 @@ header.header {
     margin-bottom: 35px;
   }
 
-  /* ⤵⤵ start header section ⤵⤵ */
-  .header .webpro-nav {
-    background-color: transparent;
-  }
-
-  .header .webpro-nav-links,
-  .header .header-btn {
-    display: none !important;
-  }
-
-  .header .mobile-toggle {
-    display: block;
-  }
-
   /* ⤵⤵ start webpro banner section ⤵⤵ */
   .banner-div {
     padding-top: 50px;
@@ -2669,13 +2656,6 @@ header.header {
   /* ⤵⤵ start webpro key lessons section ⤵ */
   .webpro-key-lessons-section {
     padding: 35px 15px;
-  }
-
-  .webpro-key-lessons-section .webpro-key-lessons-card .title {
-    padding: 15px;
-    font-size: 22px;
-    line-height: 24px;
-    font-weight: 600;
   }
 
   /* ⤵⤵ start webpro fiverr vs upwork section ⤵⤵ */
@@ -2775,12 +2755,12 @@ header.header {
     padding: 0 15px;
     margin-bottom: 20px;
   }
-.banner-div .banner-course-include-card .enroll-btn-div {
-  padding: 0 15px 0 15px;
-}
-.banner-div .banner-course-include-card .enroll-btn-div a {
-  padding: 10px;
-}
+  .banner-div .banner-course-include-card .enroll-btn-div {
+    padding: 0 15px 0 15px;
+  }
+  .banner-div .banner-course-include-card .enroll-btn-div a {
+    padding: 10px;
+  }
   .banner-div
     .webpro-banner-left-side
     .trusted-column
@@ -2796,13 +2776,6 @@ header.header {
   .webpro-key-lessons-section .webpro-key-lessons-card {
     width: calc((100% - 30px) / 2);
   }
-
-  .webpro-key-lessons-section .webpro-key-lessons-card .title {
-    font-size: 30px;
-    line-height: 34px;
-    padding: 20px;
-  }
-
   .webpro-freelance-skills-pay-counter {
     flex-wrap: wrap;
     gap: 10px;
@@ -2915,6 +2888,26 @@ header.header {
 }
 
 @media (max-width: 992px) {
+  .webpro-top-section {
+    padding: 20px 0 20px;
+    margin-bottom: 25px;
+  }
+
+  /* ⤵⤵ start header section ⤵⤵ */
+  .header .webpro-nav {
+    padding: 0;
+    border-radius: 5px;
+  }
+
+  .header .webpro-nav-links,
+  .header .header-btn {
+    display: none !important;
+  }
+
+  .header .mobile-toggle {
+    display: block;
+  }
+
   .banner-div .webpro-banner-left-side .top-content {
     gap: 26px;
   }
@@ -2939,14 +2932,11 @@ header.header {
   .mrjin-55 {
     margin-bottom: 30px !important;
   }
-
+  .webpro-banner-div .webpro-banner-content h2 span {
+    font-weight: 500;
+  }
   .webpro-results-speak-secton .title {
     font-size: 55px;
-  }
-
-  .webpro-top-section {
-    padding: 20px 0 20px;
-    margin-bottom: 25px;
   }
 
   .webpro-key-lessons-section {
@@ -3049,7 +3039,12 @@ header.header {
     right: -40px;
   }
   .webpro-learn-skills-section .webpro-learn-skills-lastcard .title {
-    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 19px;
+    line-height: 120%;
+  }
+  .webpro-learn-skills-section .webpro-learn-skills-lastcard .subtitle {
+    font-size: 14px;
   }
   .webpro-learn-skills-section .webpro-learn-skills-card .icon {
     margin-bottom: 22px;
@@ -3070,7 +3065,7 @@ header.header {
   }
 
   .webpro-results-speak-secton .subtitle {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .webpro-faq-section {
@@ -3178,11 +3173,41 @@ header.header {
     gap: 20px;
   }
 
+  .webpro-key-lessons-section .webpro-key-lessons-card:hover {
+    transform: none;
+    scale: 1;
+  }
+  .webpro-key-lessons-section .webpro-key-lessons-card {
+    border-radius: 6px;
+  }
+  .webpro-key-lessons-section .webpro-key-lessons-card .card-video {
+    border-radius: 4px;
+  }
+
   .webpro-key-lessons-section .webpro-key-lessons-card .title {
-    font-size: 24px;
-    line-height: 26px;
+    font-size: 20px;
+    line-height: 22px;
     padding: 15px;
     font-weight: 400;
+  }
+  .webpro-key-lessons-section .webpro-key-lessons-card .loading-spinner {
+    top: 50%;
+    left: 50%;
+    width: 36px;
+    height: 36px;
+    margin: -18px 0 0 -18px;
+  }
+
+  .webpro-key-lessons-section .webpro-key-lessons-card .loading-spinner::after {
+    top: calc(50% - 23px);
+    left: calc(50% - 23px);
+    width: 46px;
+    height: 46px;
+  }
+  .video-popup .close-popup {
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
   }
 
   .webpro-freelance-skills-pay-section .webpro-freelance-skills-pay-counter {
@@ -3219,20 +3244,22 @@ header.header {
     font-size: 14px;
     line-height: 20px;
   }
-
+  .webpro-comprehensive-tax-section .webpro-comprehensive-tax-card-container {
+    gap: 15px;
+  }
   .webpro-comprehensive-tax-section .webpro-comprehensive-tax-card .title {
-    font-size: 25px;
+    font-size: 20px;
     line-height: 110%;
     margin-bottom: 6px;
   }
 
   .webpro-comprehensive-tax-section .webpro-comprehensive-tax-card .subtitle {
-    font-size: 18px;
+    font-size: 12px;
     margin-bottom: 20px;
   }
 
   .webpro-comprehensive-tax-section .webpro-comprehensive-tax-card {
-    padding: 20px;
+    padding: 15px;
   }
 
   .webpro-comprehensive-tax-section .webpro-comprehensive-tax-card .icon-list {
@@ -3240,6 +3267,12 @@ header.header {
     gap: 10px;
   }
 
+  .webpro-comprehensive-tax-section
+    .webpro-comprehensive-tax-card
+    .icon-list
+    p {
+    font-size: 12px;
+  }
   .webpro-comprehensive-tax-section .webpro-comprehensive-tax-btns {
     flex-wrap: wrap;
   }
@@ -3271,7 +3304,7 @@ header.header {
     .webpro-student-review-card
     .author-name
     .name {
-    font-size: 22px;
+    font-size: 20px;
     line-height: 110%;
   }
 
@@ -3279,28 +3312,24 @@ header.header {
     .webpro-student-review-card
     .author-name
     .job {
-    font-size: 16px;
-    line-height: 100%;
+    font-size: 10px;
   }
-
   .webpro-students-reviews-section
     .webpro-student-review-card
     .author-avatar-name
     .author-avatar {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
   }
 
   .webpro-students-reviews-section .webpro-student-review-card .review {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 110%;
     margin-bottom: 15px;
   }
-
   .webpro-students-reviews-section .webpro-student-review-card .rating {
-    font-size: 18px;
+    font-size: 14px;
   }
-
   .webpro-results-speak-secton .results-speak-counter {
     flex-direction: column;
     align-items: center;
@@ -3450,8 +3479,8 @@ header.header {
     height: 40px;
   }
   .webpro-key-lessons-section .webpro-key-lessons-card .title {
-    font-size: 30px;
-    line-height: 32px;
+    font-size: 18px;
+    line-height: 130%;
   }
 
   .mrjin-22 {
@@ -3521,11 +3550,6 @@ header.header {
     line-height: 18px;
   }
 
-  .webpro-key-lessons-section .webpro-key-lessons-card .title {
-    font-size: 22px;
-    line-height: 22px;
-  }
-
   .webpro-results-speak-secton .title {
     font-size: 36px;
   }
@@ -3570,5 +3594,3 @@ header.header {
     width: 100%;
   }
 }
-
-

@@ -2121,7 +2121,7 @@ header.header {
 }
 
 .webpro-latest-events-section .events-swiper .custom-arrow svg {
-  width: 10px;
+  width: 18px;
   height: 18px;
 }
 
@@ -3329,19 +3329,6 @@ box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
     margin-bottom: 35px;
   }
 
-  .header .webpro-nav {
-    background-color: transparent;
-  }
-
-  .header .webpro-nav-links,
-  .header .header-btn {
-    display: none !important;
-  }
-
-  .header .mobile-toggle {
-    display: block;
-  }
-
   .webpro-banner-div {
     padding-top: 50px;
     height: auto;
@@ -3530,7 +3517,9 @@ box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
   .webpro-success-stories-section {
     padding: 40px 0;
   }
-
+  .webpro-success-stories-section .webpro-success-card-video .success-pause i {
+    font-size: 45px;
+  }
   .webpro-success-stories-section .webpro-success-card-video .title .h4 {
     font-size: 28px;
   }
@@ -3600,7 +3589,7 @@ box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
   }
 
   .webpro-latest-events-section .events-swiper .event-button-next {
-    right: 5%;
+    right: 7.5%;
   }
 
   .webpro-latest-events-section .event-details .desc {
@@ -3893,6 +3882,19 @@ box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
     margin-bottom: 25px;
   }
 
+  .header .webpro-nav {
+    padding: 0;
+    border-radius: 5px;
+  }
+
+  .header .webpro-nav-links,
+  .header .header-btn {
+    display: none !important;
+  }
+
+  .header .mobile-toggle {
+    display: block;
+  }
   .webpro-banner-content h2 {
     font-size: 56px;
   }
@@ -3906,6 +3908,9 @@ box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
   }
   .webpro-p-tag-same {
     font-size: 16px !important;
+  }
+  .webpro-banner-div .webpro-banner-content h2 span {
+    font-weight: 500;
   }
   .webpro-about-section {
     padding: 25px 0;
@@ -3928,7 +3933,11 @@ box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
   }
 
   .webpro-mentor-section {
-    padding: 20px 0;
+    padding: 20px 15px;
+  }
+  .webpro-mentor-section .content .text {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
   }
 
   .webpro-activity-section {
@@ -4056,11 +4065,12 @@ box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
   }
   .webpro-latest-events-section {
     margin: 25px 0;
-    padding: 40px 0 40px 0;
+    padding: 40px 15px 40px 15px;
   }
-
   .webpro-latest-events-section .content {
     width: 100%;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
   }
 
   .webpro-latest-events-section .events-swiper {
@@ -4090,10 +4100,12 @@ box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
   }
 
   .webpro-testimonials-section {
-    padding: 25px 0;
+    padding: 25px 15px;
     position: unset;
   }
-
+  .webpro-container {
+    overflow: hidden;
+  }
   .webpro-testimonials-section::after {
     content: unset;
   }
@@ -4111,7 +4123,7 @@ box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
 
   .webpro-testimonials-section .testimonials-right-side {
     width: 100%;
-    padding: 15px 15px 0px;
+    padding: 15px 0px 0px;
     position: relative;
   }
 
@@ -4721,8 +4733,8 @@ box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
   }
 
   .webpro-latest-events-section .events-swiper .custom-arrow {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
   }
   .webpro-growth-section .growth-tag .content .text .bold {
     font-size: 40%;
@@ -4731,16 +4743,16 @@ box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
     font-size: 30%;
   }
   .webpro-testimonials-section .testimonials-main-swiper .custom-arrow {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
   }
 
   .webpro-testimonials-section .testimonials-main-swiper .custom-arrow svg {
-    width: 12px;
-    height: 12px;
+    width: 18px;
+    height: 18px;
   }
   .webpro-testimonials-section .testimonials-main-swiper .swiper-button-prev {
-    right: 65px;
+    right: 75px;
   }
   .mrjin-22 {
     margin-bottom: 8px !important;
