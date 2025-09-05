@@ -2775,7 +2775,12 @@ header.header {
     padding: 0 15px;
     margin-bottom: 20px;
   }
-
+.banner-div .banner-course-include-card .enroll-btn-div {
+  padding: 0 15px 0 15px;
+}
+.banner-div .banner-course-include-card .enroll-btn-div a {
+  padding: 10px;
+}
   .banner-div
     .webpro-banner-left-side
     .trusted-column

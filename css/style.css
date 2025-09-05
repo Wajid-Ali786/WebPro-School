@@ -1865,7 +1865,7 @@ header.header {
   position: absolute;
   top: calc(50% - 30px);
   left: calc(50% - 44px);
-  border-radius: 10px;
+  border-radius: 15px;
   overflow: hidden;
   width: 84px;
   height: 57px;
@@ -2687,7 +2687,7 @@ header.header {
 .webpro-faq-section .accordion-body p {
   font-weight: 400;
   font-size: 18px;
-  line-height: 100%;
+  line-height: 130%;
   color: #565656;
   padding-right: 40px;
 }
@@ -4647,6 +4647,7 @@ box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
   .webpro-success-stories-section .webpro-success-card-video .play-pause {
     top: calc(50% - 25px) !important;
     left: calc(50% - 20px);
+    border-radius: 10px;
     width: 55px;
     height: 39px;
   }
