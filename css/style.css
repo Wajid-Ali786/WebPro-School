@@ -523,6 +523,9 @@ header.header {
   margin-bottom: 0px !important;
 }
 
+.webpro-about-section .webpro-about-counter .webpro-counter-card h3 .count {
+  display: inline-block;
+}
 .webpro-about-section .webpro-about-counter .webpro-counter-card p {
   font-weight: 500;
   font-size: 18px;

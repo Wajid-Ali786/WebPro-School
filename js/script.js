@@ -1,3 +1,71 @@
+/* Counter 
+.webpro - about - counter h3 */
+$(function(){
+  var re = /(\d{1,3}(?:[.,]\d{3})*(?:[.,]\d+)?)/g;
+
+  $('.webpro-about-counter h3').each(function(){
+    var $t=$(this);
+    if($t.find('.count').length) return;
+    $t.html($t.html().replace(re, function(orig){
+      var normalized, useComma=false;
+      if(orig.indexOf('.')>-1 && orig.indexOf(',')>-1){
+        // detect european vs us style by last separator position
+        if(orig.lastIndexOf(',') > orig.lastIndexOf('.')) normalized = orig.replace(/\./g,'').replace(',', '.'), useComma=true;
+        else normalized = orig.replace(/,/g,'');
+      } else if(orig.indexOf(',')>-1){
+        // if comma has 1-2 digits after it => decimal, else thousands
+        if(/,\d{1,2}$/.test(orig)) normalized = orig.replace(',', '.'), useComma=true;
+        else normalized = orig.replace(/,/g,'');
+      } else if(orig.indexOf('.')>-1){
+        // if dot has 1-2 digits after it => decimal, else thousands
+        if(/\.\d{1,2}$/.test(orig)) normalized = orig, useComma=false;
+        else normalized = orig.replace(/\./g,'');
+      } else normalized = orig;
+      var dec = (normalized.indexOf('.')>-1) ? normalized.split('.')[1].length : 0;
+      return '<span class="count" data-target="'+normalized+'" data-dec="'+dec+'" data-comma="'+(useComma?1:0)+'">0</span>';
+    }));
+  });
+
+  function fmt(n, dec, useComma){
+    if(dec){
+      var s = Number(n).toFixed(dec).split('.');
+      s[0] = s[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+      return useComma ? s[0] + ',' + s[1] : s[0] + '.' + s[1];
+    } else {
+      return Math.round(n).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
+  }
+
+  function animate($s, dur){
+    if($s.data('done')) return;
+    var target = Number($s.data('target')) || 0,
+        dec = parseInt($s.data('dec'),10)||0,
+        useComma = $s.data('comma')==1,
+        t0=null;
+    function step(ts){
+      if(!t0) t0=ts;
+      var p = Math.min((ts-t0)/dur,1),
+          cur = target * p;
+      $s.text(fmt(cur, dec, useComma));
+      if(p<1) requestAnimationFrame(step);
+      else { $s.text(fmt(target, dec, useComma)); $s.data('done', true); }
+    }
+    requestAnimationFrame(step);
+  }
+
+  $(window).on('scroll load', function(){
+    $('.webpro-about-counter .webpro-counter-card').each(function(){
+      var $c=$(this);
+      if($c.data('animated')) return;
+      var wt=$(window).scrollTop(), wb=wt+$(window).height(), et=$c.offset().top, eb=et+$c.outerHeight();
+      if(et < wb && eb > wt){
+        $c.find('.count').each(function(){ animate($(this), 1200); });
+        $c.data('animated', true);
+      }
+    });
+  }).trigger('load');
+});
+
 // Mobile Menu Toggle
 $(function () {
   const $menu = $(".mobile-menu"),
@@ -86,7 +154,7 @@ $(document).ready(function () {
       0: {
         slidesPerView: 1,
       },
-       550: {
+      550: {
         slidesPerView: 1.4,
       },
       768: {
@@ -212,31 +280,32 @@ $(function () {
   });
 });
 
-
 /* activity Images slider */
-const sliders = document.querySelectorAll('.webpro-activity-section .activity-images .galry-row');
+const sliders = document.querySelectorAll(
+  ".webpro-activity-section .activity-images .galry-row"
+);
 
-sliders.forEach(slider => {
+sliders.forEach((slider) => {
   let isDown = false;
   let startX;
   let scrollLeft;
 
-  slider.addEventListener('mousedown', (e) => {
+  slider.addEventListener("mousedown", (e) => {
     isDown = true;
     startX = e.pageX - slider.offsetLeft;
     scrollLeft = slider.scrollLeft;
   });
 
-  slider.addEventListener('mouseleave', () => {
+  slider.addEventListener("mouseleave", () => {
     isDown = false;
   });
 
-  slider.addEventListener('mouseup', () => {
+  slider.addEventListener("mouseup", () => {
     isDown = false;
   });
 
-  slider.addEventListener('mousemove', (e) => {
-    if(!isDown) return;
+  slider.addEventListener("mousemove", (e) => {
+    if (!isDown) return;
     e.preventDefault();
     const x = e.pageX - slider.offsetLeft;
     const walk = (x - startX) * 2; // drag speed multiplier
@@ -244,3 +313,4 @@ sliders.forEach(slider => {
   });
 });
 
+/* conter */

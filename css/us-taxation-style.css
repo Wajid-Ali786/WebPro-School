@@ -1040,7 +1040,9 @@ header.header {
   color: #000000;
   margin-bottom: 8px;
 }
-
+.webpro-counter-card h3 .count {
+  display: inline-block;
+}
 .webpro-freelance-skills-pay-section
   .webpro-freelance-skills-pay-counter
   .webpro-counter-card
@@ -1793,6 +1795,7 @@ header.header {
   padding: 93px 0px 115px;
   background-image: url(../assets/images/webpro-us-taxation-results-speak-section-bg.png);
   background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   position: relative;
@@ -3037,19 +3040,19 @@ header.header {
   }
   .webpro-learn-skills-section .webpro-learn-skills-lastcard .tag {
     width: 150px;
-            top: -80px;
-        right: -40px;
+    top: -80px;
+    right: -40px;
   }
-.webpro-learn-skills-section .webpro-learn-skills-lastcard .title {
-  padding-left: 10%;
-}
+  .webpro-learn-skills-section .webpro-learn-skills-lastcard .title {
+    padding-left: 10%;
+  }
   .webpro-learn-skills-section .webpro-learn-skills-card .icon {
     margin-bottom: 22px;
   }
-.webpro-comprehensive-tax-section .webpro-comprehensive-tax-card:hover {
-  transform: none;
-  scale: 1;
-}
+  .webpro-comprehensive-tax-section .webpro-comprehensive-tax-card:hover {
+    transform: none;
+    scale: 1;
+  }
   .webpro-comprehensive-tax-section .webpro-comprehensive-tax-card .icon-list {
     gap: 20px;
   }
@@ -3562,3 +3565,5 @@ header.header {
     width: 100%;
   }
 }
+
+
